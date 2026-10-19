@@ -189,7 +189,7 @@ Display event details and schedules on your public site using native Antlers tem
 
 ## 📄 License
 
-ActivityPub Events for Statamic is open-sourced software licensed under the **[MIT license](LICENSE.md)**.
+ActivityPub Events for Statamic is source-available software provided under the **[Statamic Commercial License](LICENSE.md)** (free for local development and non-production testing; requires a valid commercial license for live production deployments).
 
 ## 🦾 AI Disclosure
 
