@@ -1,0 +1,114 @@
+title: Event
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          display: Title
+          validate: 'required'
+      -
+        handle: content
+        field:
+          type: markdown
+          display: Content
+          instructions: 'Event description.'
+      -
+        handle: start_time
+        field:
+          type: date
+          display: 'Start Time'
+          time_enabled: true
+          time_required: true
+          validate: 'required'
+      -
+        handle: end_time
+        field:
+          type: date
+          display: 'End Time'
+          time_enabled: true
+          time_required: false
+      -
+        handle: location
+        field:
+          type: entries
+          display: Location
+          collections:
+            - places
+          max_items: 1
+          instructions: 'Select the place where this event is hosted.'
+  ticketing:
+    display: Ticketing
+    fields:
+      -
+        handle: ticket_price
+        field:
+          type: float
+          display: 'Ticket Price'
+          instructions: 'Price of the ticket (leave blank if free).'
+      -
+        handle: ticket_currency
+        field:
+          type: select
+          display: Currency
+          options:
+            CAD: CAD
+            USD: USD
+            EUR: EUR
+            GBP: GBP
+          default: CAD
+          instructions: 'Currency code for the ticket price.'
+      -
+        handle: ticket_url
+        field:
+          type: text
+          input_type: url
+          display: 'Buy URL'
+          instructions: 'Link to purchase a ticket or register.'
+  attendees:
+    display: RSVPs & Attendees
+    fields:
+      -
+        handle: attendees
+        field:
+          type: grid
+          display: Attendees
+          add_row: 'Add Attendee'
+          fields:
+            -
+              handle: actor
+              field:
+                type: text
+                display: 'Actor ID / URI'
+            -
+              handle: name
+              field:
+                type: text
+                display: Name
+            -
+              handle: handle
+              field:
+                type: text
+                display: Handle
+            -
+              handle: avatar
+              field:
+                type: text
+                display: Avatar
+            -
+              handle: status
+              field:
+                type: select
+                display: Status
+                options:
+                  accepted: Going
+                  rejected: 'Not Going'
+                default: accepted
+            -
+              handle: timestamp
+              field:
+                type: text
+                display: Timestamp
+

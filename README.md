@@ -13,7 +13,11 @@
 
 > [!NOTE]  
 > **Pre-Release:**  
+<<<<<<< HEAD
 > ActivityPub Events is an early companion addon for [`statamic-activitypub-core`](https://worktree.ca/ethernick/statamic-activitypub-core) and [`statamic-activitypub-places`](https://worktree.ca/ethernick/statamic-activitypub-places). Free for local development and non-production testing under our [Commercial Source-Available License](https://worktree.ca/ethernick/statamic-activitypub-events/src/branch/main/LICENSE.md). Available for feedback ahead of official Marketplace publication.
+=======
+> ActivityPub Events is an early companion addon for [`statamic-activitypub-core`](https://github.com/ethernick/statamic-activitypub-core) and [`statamic-activitypub-places`](https://github.com/ethernick/statamic-activitypub-places). Free for local development and non-production testing under our [Commercial Source-Available License](https://github.com/ethernick/statamic-activitypub-events/src/branch/main/LICENSE.md). Available for feedback ahead of official Marketplace publication.
+>>>>>>> dev
 
 Federate community events, connect OpenStreetMap venues, and broadcast schedules across the Fediverse. **ActivityPub Events** extends [`statamic-activitypub-core`](https://github.com/ethernick/statamic-activitypub-core) and [`statamic-activitypub-places`](https://github.com/ethernick/statamic-activitypub-places) to seamlessly publish W3C ActivityStreams 2.0 `Event` objects to Mastodon, Mobilizon, and the broader social web.
 

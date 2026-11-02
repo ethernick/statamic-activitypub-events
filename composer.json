@@ -1,0 +1,56 @@
+{
+    "name": "ethernick/statamic-activitypub-events",
+    "description": "ActivityPub Events, RSVPs, and Federated Calendar for Statamic 5.x and 6.x",
+    "license": "proprietary",
+    "type": "statamic-addon",
+    "keywords": [
+        "statamic",
+        "statamic-addon",
+        "activitypub",
+        "events",
+        "calendar",
+        "rsvps",
+        "mobilizon",
+        "tickets",
+        "fediverse",
+        "mastodon",
+        "cms"
+    ],
+    "homepage": "https://github.com/ethernick/statamic-activitypub-events",
+    "authors": [
+        {
+            "name": "Nick Kempinski",
+            "homepage": "https://github.com/ethernick",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/ethernick/statamic-activitypub-events/issues",
+        "source": "https://github.com/ethernick/statamic-activitypub-events",
+        "docs": "https://github.com/ethernick/statamic-activitypub-events/docs"
+    },
+    "require": {
+        "php": "^8.2",
+        "statamic/cms": "^5.0 | ^6.0",
+        "ethernick/statamic-activitypub-core": "^0.9 || ^1.0 || dev-main",
+        "ethernick/statamic-activitypub-places": "^0.1.0 || dev-main"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ethernick\\ActivityPubEvents\\": "src/"
+        }
+    },
+    "extra": {
+        "statamic": {
+            "name": "ActivityPub Events",
+            "description": "ActivityPub Events and RSVP management"
+        },
+        "laravel": {
+            "providers": [
+                "Ethernick\\ActivityPubEvents\\ActivityPubEventsServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
